@@ -1,0 +1,172 @@
+/* Root styles */
+div {
+    border-radius: 6px;
+    font-family: Tahoma;
+    max-width: 700px;
+	margin-left: auto; /* Aligns the container to the right */
+    margin-right: 0; /* Ensures no extra space on the right */
+}
+
+span { 
+    position: absolute; 
+	top: 0; /* this will put the image on the top of the parent container */ 
+	right: 0; 
+    padding: 10px;/* this will put the image on the right of the parent container */ 
+    font-weight: bolder;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: Tahoma;
+}
+
+:root {
+	/* Colors */
+	--background-color: #191919;
+	--block-color: #252525;
+	--deep-background-color: #474747; /* Medium gray */
+	--main-text-color: #d6d6d6; /* Light gray */
+	--scope-text-color: #c98d1b; /* Accent */
+	--soft-text-color: #a1a1a1; /* Softer gray */
+	--shadow-text-color: #4e4e4e; /* Darker gray for shadows */
+	--divider-color: #373737;
+
+    /* Font styles */
+    --font-weight-bold: 900;    
+    --main-font-size: var(--main-font-size);
+    --secondary-font-size: 10px;
+
+    /* Margins and padding */
+    --max-width: 500px;
+    --widget-standard-margin: 5px;
+    --widget-padding: 5px 10px 10px 10px;
+}
+
+body {
+    background: var(--background-color);
+}
+
+/* StandardBox, trcBox, and audioBox */
+.StandardBox {
+    padding: var(--widget-padding);
+    background: var(--block-color);
+    margin-bottom: var(--widget-standard-margin);
+}
+
+.TermBox {
+    margin-bottom: 0;
+    padding: 1px 1px 1px 10px;
+    display: block;
+    background: var(--block-color);
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+    }
+
+.TermBox span {
+	all: unset; /* Ensures Anki's inline styles work */
+}
+
+.DeepBox {
+    margin-bottom: 0;
+    padding: 1px 1px 1px 10px;
+    display: block;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	background: var(--deep-background-color);
+}
+
+/*Audio and Transcription boxes*/
+.container {
+    margin-top: var(--widget-standard-margin);
+    background-image: none;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    filter: none;
+    margin-bottom: var(--widget-standard-margin);
+}
+.trcBox{
+    flex: 5;
+    margin: 0% 0% 0% 0%;
+    padding: 1px 1px 1px 10px;
+    background: var(--block-color);
+	display: flex;
+    align-items: center;
+}
+.audioBox {
+    flex: 1;
+    margin: 0% 0% 0% 1%;
+    background: var(--block-color);
+}
+
+/* Audio button */
+#aud {
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 50%; /* Make it a circle */
+    font-size: 10px; /* Adjust font size */
+}
+    
+#image {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
+
+/*** Text styles below ***/
+/* Term style */
+#term {
+    padding: 15px;
+    margin: 0;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--scope-text-color);
+    }
+/* Main text style for all fields */
+#main {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    font-size: var(--main-font-size);
+    font-weight: 400;
+    color: var(--main-text-color);
+    }
+/* Box name style */
+#shadow {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    vertical-align: baseline;
+    font-size: 10px;
+    font-weight: var(--font-weight-bold);
+	font-size: 7px;
+    color: var(--shadow-text-color);
+    }
+/* Soft text style for secondary info */
+#softtext {
+    margin: 0;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    font-size: 10px;
+    font-weight: 0;
+    color: var(--main-text-color);
+    }
+/* Pos text */
+#deep{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 10px;
+    font-weight: 900;
+    color: var(--main-text-color);
+    }
+/* Color of hr line */
+hr{
+    border: none; 
+    background-color: var(--divider-color); 
+    height: 1px;
+    }

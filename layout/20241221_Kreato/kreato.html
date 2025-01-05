@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" type="text/css" href="kreato.css">
+</head>
+<body>
+	<div class="ParentContainer">
+		<div class="TermBox">
+			<nav>
+				<p id="shadow">Context</p>
+				<p id="term">{{Context}}</p>
+			</nav>
+		</div>
+
+		<div class="DeepBox">
+			<p id="deep">{{Deep}}</p>
+		</div>
+
+		<div class="container">
+			<div class="trcBox">
+				<p id="softtext">{{Transcription}}</p>
+			</div>
+			
+			<div class="audioBox">
+				<p style=" text-align: center;">{{Audio}}</p>
+			</div>
+
+		</div>
+
+		<div class="StandardBox">
+			<nav>
+				<p id="shadow">Image</p>
+							<img id="image"{{Image}}
+				<hr>
+				<p id="shadow">Translation</p>
+				<p id="softtext">{{Translation}}</p>
+			</nav>
+		</div>
+
+		<div class="StandardBox">
+			<nav>
+				<p id="shadow">Definition</p>
+				<p id="main">{{Definition}}</p>
+			</nav>
+		</div>
+
+		<div class="StandardBox">
+			<nav>
+				<p id="shadow">Mnemonics</p>
+				<p id="main">{{Mnemonics}}</p>
+			</nav>
+		</div>
+
+		<div class="StandardBox">
+			<nav>
+				<p id="shadow">Synonym</p>
+				<p id="main">{{Synonym}}</p>
+			</nav>
+		</div>
+
+		<div class="StandardBox">
+			<nav>
+				<p id="shadow">Remarks</p>
+				<p id="main">{{Remarks}}</p>
+			</nav>
+		</div>
+    </div>
+</body>
+</html>

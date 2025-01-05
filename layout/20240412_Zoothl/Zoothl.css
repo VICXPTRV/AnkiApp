@@ -1,0 +1,155 @@
+/* Root styles */
+div {
+    border-radius: 6px;
+    font-family: Tahoma;
+    max-width: 700px;
+}
+
+span { 
+    position: absolute; 
+	top: 0; /* this will put the image on the top of the parent container */ 
+	right: 0; 
+    padding: 10px;/* this will put the image on the right of the parent container */ 
+    font-weight: bolder;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: Tahoma;
+    color: #19535c;
+}
+
+:root {
+    /* Colors */
+    --background-color: #1D465C;
+    --pos-background-color: #913474;
+    --main-text-color: #E0FBFC;
+    --soft-text-color: #78ACBD;
+    --shadow-text-color: #2F5C6B;
+    --pos-text-color: #293241;
+
+    /* Font styles */
+    --font-weight-bold: 900;    
+    --main-font-size: var(--main-font-size);
+    --secondary-font-size: 10px;
+
+    /* Margins and padding */
+    --max-width: 500px;
+    --widget-standard-margin: 5px;
+    --widget-padding: 5px 10px 10px 10px;
+}
+
+/* StandardBox, trcBox, and audioBox */
+.StandardBox {
+    padding: var(--widget-padding);
+    background: var(--background-color);
+    margin-bottom: var(--widget-standard-margin);
+}
+
+.TermBox {
+    margin-bottom: 0;
+    padding: 1px 1px 1px 10px;
+    display: block;
+    background: var(--background-color);
+    }
+.POSBox {
+    max-width: 700px;
+    padding: 0px 0px 10px 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;	
+    background: var(--pos-background-color);
+    }
+
+/*Audio and Transcription boxes*/
+.container {
+    margin-top: var(--widget-standard-margin);
+    background-image: none;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    filter: none;
+    margin-bottom: var(--widget-standard-margin);
+}
+.trcBox{
+    flex: 5;
+    margin: 0% 0% 0% 0%;
+    padding: 1px 1px 1px 10px;
+    background: var(--background-color);
+}
+
+.audioBox {
+    flex: 1;
+    margin: 0% 0% 0% 1%;
+    background: var(--background-color);
+}
+
+/* Audio button */
+#aud {
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 50%; /* Make it a circle */
+    font-size: 10px; /* Adjust font size */
+}
+    
+#image {
+    text-align: center;
+}
+
+/* Text styles below */
+/* Term style */
+#term {
+    padding: 15px;
+    margin: 0;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-text-color);
+    }
+/* Main text style for all fields */
+#main {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    font-size: var(--main-font-size);
+    font-weight: 400;
+    color: var(--main-text-color);
+    }
+/* Box name style */
+#shadow {
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    vertical-align: baseline;
+    font-size: 10px;
+    font-weight: var(--font-weight-bold);
+    color: var(--shadow-text-color);
+    }
+/* Soft text style for secondary info */
+#softtext {
+    margin: 0;
+    text-align: left;
+    left: 10px;
+    top: 10px;
+    font-size: 10px;
+    font-weight: 0;
+    color: var(--soft-text-color);
+    }
+/* Pos text */
+#pos{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 8px;
+    font-weight: 900;
+    color: var(--pos-text-color);
+    }
+/* Color of hr line */
+hr{
+    border: none; 
+    background-color: var(--shadow-text-color); 
+    height: 1px;
+    }
