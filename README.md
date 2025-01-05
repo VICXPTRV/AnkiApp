@@ -1,2 +1,2 @@
 # AnkiApp
-Layout for AnkiApp cards
+Layout for cards and some scripts for AnkiApp
